@@ -1,0 +1,125 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+:root {
+    --c-primary: #F03000;
+    --c-white: #FFFFFF;
+    --c-icon: #F0F0F0;
+    --c-footer: #444444;
+    --c-date: #888888;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--c-white);
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.header__logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header__image {
+    max-width: 100%;
+}
+
+.header__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.header__link {
+    color: var(--c-primary);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+.header__link:hover,
+.header__link:focus {
+    background-color: var(--c-primary);
+    color: white;
+}
+
+.product {
+    display: flex;
+    min-height: 240px;
+    border: 2px solid grey;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product__price {
+    color: white;
+    background-color: var(--c-primary);
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    max-width: 110px;
+    margin: 20px;
+}
+
+.product__header {
+    font-size: 28px;
+    font-weight: 600;
+    margin-left: 20px;
+    color: var(--c-white);
+}
+
+.product__content {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    color: white;
+}
+
+.product--img-palmy {
+    background-image: url(images/palmy.png);
+    background-size: cover;
+}
+
+.product--img-jezero {
+    background-image: url(images/jezero2.png);
+    background-size: cover;
+}
+
+.product--img-nakole {
+    background-image: url(images/nakole.png);
+    background-size: cover;
+}
+
+.product--img-lodicka {
+    background-image: url(images/lodicka.png);
+    background-size: cover;
+}
+
+.product--img-podkova {
+    background-image: url(images/podkova.png);
+    background-size: cover;
+}
+
+.product--img-zatoka {
+    background-image: url(images/zatoka.png);
+    background-size: cover;
+}
+
+.products-grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.products-grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
